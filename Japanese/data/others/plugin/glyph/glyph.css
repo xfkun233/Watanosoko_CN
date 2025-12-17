@@ -1,0 +1,111 @@
+/* ﻿【glyphプラグイン】 　　　　　　　　*/
+/*　http://hororo.wp.xdomain.jp/100/   */
+
+@charset "utf-8";
+
+.img_next.middle,
+.glyph_image.middle {
+	top: 50%;
+	transform:translateY(-50%);
+}
+
+.img_next.center,
+.glyph_image.center {
+	left: 50%;
+	transform:translateX(-50%);
+}
+
+
+/*点滅*/
+.img_next.flash,
+.glyph_image.flash {
+	-webkit-animation: flash 1s ease-in-out infinite alternate;
+	animation: flash 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes flash {
+	0% { opacity:1; }
+	100% { opacity:0; }
+}
+@keyframes flash {
+	0% { opacity:1; }
+	100% { opacity:0; }
+}
+
+
+/*上下移動*/
+.img_next.updown,
+.glyph_image.updown {
+	-webkit-animation: updown 1s ease-in-out infinite alternate;
+	animation: updown 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes updown {
+	0% {-webkit-transform: translateY(0px);}
+	100% {-webkit-transform: translateY(3px);}
+}
+@keyframes updown {
+	0% {transform: translateY(0px);}
+	100% {transform: translateY(3px);}
+}
+
+
+/*Y回転*/
+.img_next.rotateY,
+.glyph_image.rotateY {
+	-webkit-animation: rotateY 1s ease-in-out infinite alternate;
+	animation: rotateY 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes rotateY {
+	0% { -webkit-transform:rotateY(0deg); }
+	100% { -webkit-transform:rotateY(180deg); }
+}
+@keyframes rotateY {
+	0% { transform:rotateY(0deg); }
+	100% { transform:rotateY(180deg); }
+}
+
+
+/*X回転*/
+.img_next.rotateX,
+.glyph_image.rotateX {
+	-webkit-animation: rotateX 1s ease-in-out infinite alternate;
+	animation: rotateX 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes rotateX {
+	0% { -webkit-transform:rotateX(0deg); }
+	100% { -webkit-transform:rotateX(180deg); }
+}
+@keyframes rotateX {
+	0% { transform:rotateX(0deg); }
+	100% { transform:rotateX(180deg); }
+}
+
+
+/*Z回転*/
+.img_next.rotateZ,
+.glyph_image.rotateZ {
+	-webkit-animation: rotateZ 2s linear infinite;
+	animation: rotateZ 2s linear infinite;
+}
+@-webkit-keyframes rotateZ {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes rotateZ {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+
+/*拡大縮小*/
+.img_next.scaling,
+.glyph_image.scaling {
+	-webkit-animation: scaling 1s ease-in-out infinite alternate;
+	animation: scaling 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes scaling {
+	0% { -webkit-transform:scale(1.0); }
+	100% { -webkit-transform:scale(0.75); }
+}
+@keyframes scaling {
+	0% { transform:scale(1.0); }
+	100% { transform:scale(0.75); }
