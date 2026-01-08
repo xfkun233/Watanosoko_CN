@@ -52,6 +52,7 @@
 @ct
 @clearfix
 @add_theme_button
+@position layer="message0" frame=none
 @position layer="message0" left=0 top=0 width=960 height=640 page=fore visible=true
 @position layer="message0" marginl=15 marginr=15 margint=15 marginb=15
 @layopt layer=message0 visible=true

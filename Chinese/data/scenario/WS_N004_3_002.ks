@@ -777,12 +777,12 @@
 「绝对会救山彦的，不要担心。[l][r]
 之后，」[wsp]
 
-
+#
 @mes_all
 
 @bg storage=vis018_line01.jpg time=500
 
-
+#
 就拜托你了，[l]另一个我。[wsp]
 
 @mes_normal
